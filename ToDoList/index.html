@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="Plugin/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="row">
+
+    <div id="DeleteModal" class="modal">
+        <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title">Delete</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <p>Are You Sure To Delete.</p>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-danger" onclick="Delete();">Delete</button>
+             </div>
+           </div>
+        </div>
+     </div>
+      
+
+    <div class="col-12">
+        <div class="row justify-content-center">
+            <input id="FunctionType" type="hidden" value="Add">
+            <input id="EditID" type="hidden" value="">
+            
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <input id="ToDoItem" class="input" type="text" placeholder="To Do Item">
+                <button id="AddBtn" class="EditBtn ms-2">Add</button>
+            </div>
+    
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <div id="ToDoList" class="ToDoListDiv">
+    
+                    <div class="d-flex justify-content-center mt-2">
+                        <h1>To Do List</h1>
+                    </div>
+    
+                    <div id="AppendToDoListHere">
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+</div>
+
+
+<script src="Plugin/jquery.js"></script>
+<script src="Plugin/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="ToDo.js"></script>
+
+
+</body>
+</html>

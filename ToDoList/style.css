@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Plugin/Font-Family/Poppins/Poppins-Light.ttf');
+}
+
+*{
+    color: dimgray;
+}
+
+.input{
+    padding: 15px;
+    width: 320px;
+    border: 2px solid dimgray;
+    border-radius: 25px;
+    font-family:'Poppins';
+    outline: none;
+}
+
+
+.ToDoListDiv{
+    min-height: 550px;
+    width: 50%;
+    border: 2px solid dimgray;    
+    border-radius: 25px;
+    font-family:'Poppins';
+}
+#AppendToDoListHere{
+    padding: 12px;
+}
+
+.EditBtn{
+    background: dimgray;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 3px 10px;
+}
+
+.DelBtn{
+    background: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 3px 10px;
+}
